@@ -14,7 +14,7 @@ module.exports = {
           "https://github.com/pollmix/code-note/tree/master/notes/",
         showThemeInfo: false,
         showDescriptionInSidebar: true,
-        logo: "https://github.com/pollmix/code-note/blob/master/notes/asset/logo.png",
+        logo: "https://i.ibb.co/jW5KBs5/logo.png",
       },
     },
   ],

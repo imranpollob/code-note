@@ -61,7 +61,7 @@ These are the elements outlined in John Gruber’s original design document. All
 
 ### Image
 
-![alt text](image.jpg)
+![alt text](./asset/logo.png)
 
 ## Extended Syntax
 
@@ -76,7 +76,7 @@ These elements extend the basic syntax by adding additional features. Not all Ma
 
 ### Fenced Code Block
 
-```
+```json
 {
   "firstName": "John",
   "lastName": "Smith",
@@ -112,27 +112,8 @@ term
 
 # Theme Features
 
-
 > This theme adds a few additional features to standard markdown.
 
-## Images
-
-![](./asset/opengraph.png)
-![](./asset/logo.png)
-
-Embed images using the usual markdown syntax.
-
-```md
-![](./asset/opengraph.png)
-```
-
-## Fenced code blocks
-
-Like you use with GitHub, e.g.
-
-    ```js
-    const variable = 42
-    ```
 
 ### Highlighting lines in code blocks
 
@@ -149,18 +130,6 @@ To highlight lines, wrap line with this comment before: `// highlight-start` and
   grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
 }
 ```
-
-      ```css
-      .grid {
-      // highlight-start
-        display: grid;
-        grid-gap: 30px;
-      // highlight-end
-        grid-template-columns: repeat(auto-fill, 112px);
-        /* or this */
-        grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
-      }
-      ```
 
 ## Emoji short codes
 
@@ -196,8 +165,3 @@ Tables are responsive by default. If you need to limit line length for a cell, a
 | This is a row       | with some                                                                           | content                                                   |
 | This is another row | with a lot more content. <br/>Nullam netus eu fringilla turpis parturient dignissim | Velit ut mauris penatibus <br/>turpis commodo consectetur |
 
-## Link truncation
-
-This uses [remark-truncate-links](https://github.com/GaiAma/Coding4GaiAma/tree/master/packages/remark-truncate-links) to truncate links
-
-https://github.com/mrmartineau/gatsby-theme-code-notes
