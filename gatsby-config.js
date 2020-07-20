@@ -1,18 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-code-notes',
-    description: `A starter for gatsby-theme-code-notes`,
-    author: 'Zander',
+    title: "Imran Pollob's Codes",
+    description: `My code notes`,
+    author: "Imran Pollob",
   },
   plugins: [
     {
-      resolve: 'gatsby-theme-code-notes',
+      resolve: "gatsby-theme-code-notes",
       options: {
-        contentPath: 'notes',
-        basePath: '/',
-        showThemeInfo: true,
+        contentPath: "notes",
+        basePath: "/",
+        gitRepoContentPath:
+          "https://github.com/pollmix/code-note/tree/master/notes",
+        showThemeInfo: false,
         showDescriptionInSidebar: true,
+        logo: "/notes/logo.png",
       },
     },
   ],
-}
+};
