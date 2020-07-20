@@ -11,10 +11,10 @@ module.exports = {
         contentPath: "notes",
         basePath: "/",
         gitRepoContentPath:
-          "https://github.com/pollmix/code-note/tree/master/notes",
+          "https://github.com/pollmix/code-note/tree/master/notes/",
         showThemeInfo: false,
         showDescriptionInSidebar: true,
-        logo: "/notes/logo.png",
+        logo: "notes/logo.png",
       },
     },
   ],
