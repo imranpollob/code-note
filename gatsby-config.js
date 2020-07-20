@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Imran Pollob's Codes",
-    description: `My code notes`,
+    description: `Imran Pollob`,
     author: "Imran Pollob",
   },
   plugins: [
@@ -14,7 +14,7 @@ module.exports = {
           "https://github.com/pollmix/code-note/tree/master/notes/",
         showThemeInfo: false,
         showDescriptionInSidebar: true,
-        logo: "notes/logo.png",
+        logo: "https://github.com/pollmix/code-note/blob/master/notes/asset/logo.png",
       },
     },
   ],
