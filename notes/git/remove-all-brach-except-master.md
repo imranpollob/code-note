@@ -1,5 +1,5 @@
 ---
-title: Remove commit from remote
+title: Remove all branch except master
 tags:
   - git
 ---
