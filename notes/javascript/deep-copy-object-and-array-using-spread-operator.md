@@ -37,7 +37,7 @@ console.log(a) // 5
 ```
 
 ### Composite data types:
-— Object
+- Object
 - Array
 
 Technically, arrays are also objects, so they behave in the same way. These values are actually stored just once when instantiated, and assigning a variable just creates a `pointer (reference)` to that value.
