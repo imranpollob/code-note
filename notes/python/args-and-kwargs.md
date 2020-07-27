@@ -132,3 +132,80 @@ To recap, the correct order for your parameters is:
 def my_function(a, b, *args, **kwargs):
     pass
 ```
+
+> The most common use case is when making function decorators
+
+## Fancy uses of unpacking operator
+
+### Print unpacking list 
+
+```python
+my_list = [1, 2, 3]
+
+print(*my_list)
+# 1 2 3
+
+print(*my_list, sep=", ")
+# 1, 2, 3
+```
+
+### Unpack and assign to variable
+
+```python
+my_list = [1, 2, 3, 4, 5, 6]
+
+a, *b, c = my_list
+
+print(a)
+print(b)
+print(c)
+# 1
+# [2, 3, 4, 5]
+# 6
+```
+
+### Merging lists
+
+```python
+my_first_list = [1, 2, 3]
+my_second_list = [4, 5, 6]
+my_merged_list = [*my_first_list, *my_second_list]
+
+print(my_merged_list)
+# [1, 2, 3, 4, 5, 6]
+```
+
+### Merging dictionaries
+
+```python
+my_first_dict = {"A": 1, "B": 2}
+my_second_dict = {"C": 3, "D": 4}
+my_merged_dict = {**my_first_dict, **my_second_dict}
+
+print(my_merged_dict)
+# {'A': 1, 'B': 2, 'C': 3, 'D': 4}
+```
+
+### String to list 
+
+`*` operator works on any __iterable__ object, and string is an iterable object
+
+```python
+a = [*"RealPython"]
+print(a)
+# ['R', 'e', 'a', 'l', 'P', 'y', 't', 'h', 'o', 'n']
+```
+
+Another, fancy one liner
+
+```py
+*a, = "RealPython"
+print(a)
+# ['R', 'e', 'a', 'l', 'P', 'y', 't', 'h', 'o', 'n']
+```
+
+There’s the unpacking operator *, followed by a variable, a comma, and an assignment. That’s a lot packed into one line! In fact, this code is no different from the previous example. It just takes the string RealPython and assigns all the items to the new list a, thanks to the unpacking operator *.
+
+The comma after the a does the trick. When you use the unpacking operator with variable assignment, Python requires that your resulting variable is either a list or a tuple. With the trailing comma, you have actually defined a tuple with just one named variable a.
+
+While this is a neat trick, many Pythonistas would not consider this code to be very readable. As such, it’s best to use these kinds of constructions sparingly.
