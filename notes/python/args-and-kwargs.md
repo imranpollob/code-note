@@ -1,5 +1,5 @@
 ---
-title: *args and **kwargs - packing and unpacking arguments
+title: "*args and **kwargs - packing and unpacking arguments"
 tags:
   - python
 ---
