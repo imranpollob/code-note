@@ -73,12 +73,12 @@ fun(name="geeks", ID="101", language="Python")
 
 These utilizes arguments __unpacking__
 
-*args and **kwargs are mostly used in function definitions. You could have also written *var and **vars. Writing *args and **kwargs is just a convention.
+`*args` and `**kwargs` are mostly used in function definitions. You could have also written `*var` and `**vars`. Writing `*args` and `**kwargs` is just a convention.
 
-*args and **kwargs allow you to pass a variable number of arguments to a function.
+`*args` and `**kwargs` allow you to pass a variable number of arguments to a function.
 
 ## Usage of *args
-*args is used to send a __non-keyworded__ variable length argument list to the function.
+`*args` is used to send a __non-keyworded__ variable length argument list to the function.
 
 Here’s an example to help you get a clear idea:
 
@@ -98,7 +98,7 @@ test_var_args('yasoob', 'python', 'eggs', 'test')
 I hope this cleared away any confusion that you had.
 
 ## Usage of **kwargs
-**kwargs allows you to pass __keyworded__ variable length of arguments to a function. You should use **kwargs if you want to handle named arguments in a function. 
+`**kwargs` allows you to pass __keyworded__ variable length of arguments to a function. You should use `**kwargs` if you want to handle named arguments in a function. 
 
 Here is an example to get you going with it:
 
@@ -112,7 +112,7 @@ greet_me(name="yasoob", age=21)
 # age = 21
 ```
 
-This is just the basics of **kwargs and you can see how useful it is.
+This is just the basics of `**kwargs` and you can see how useful it is.
 
 ## Using *args and **kwargs 
 Now that you have learned what `*args` and `**kwargs` are for, you are ready to start writing functions that take a varying number of input arguments. 
@@ -124,8 +124,8 @@ In this case, you have to bear in mind that __order matters__. Just as non-defau
 To recap, the correct order for your parameters is:
 
 - Standard arguments
-- *args arguments
-- **kwargs arguments
+- `*args` arguments
+- `**kwargs` arguments
 
 ```python
 # correct_function_definition.py
