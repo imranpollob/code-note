@@ -31,6 +31,7 @@ export default function HTML(props) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="My notes for repetitive common searches." />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
